@@ -42,5 +42,4 @@ jobs:
           username: ${{ secrets.REMOTE_VM_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            pwd
-            echo ${{ secrets.REMOTE_VM_HOST }}
+            sh /home/liqingbao/deploy_front.sh
