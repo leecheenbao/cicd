@@ -40,7 +40,7 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_VM_HOST }}
           username: ${{ secrets.REMOTE_VM_USERNAME }}
-          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             pwd
             echo ${{ secrets.REMOTE_VM_HOST }}
