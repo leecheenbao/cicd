@@ -43,3 +43,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             pwd
+            echo ${{ secrets.REMOTE_VM_HOST }}
